@@ -1,0 +1,30 @@
+
+<div class="container">
+    <div class="area">
+        <div class="toolbar">
+            <button mat-button (click)="format('bold')">
+                <mat-icon>format_bold</mat-icon>
+            </button>
+            <button mat-button (click)="format('italic')">
+                <mat-icon>format_italic</mat-icon>
+            </button>
+            <button mat-button (click)="format('underline')">
+                <mat-icon>format_underlined</mat-icon>
+            </button>
+            <button mat-button (click)="format('justifyLeft')">
+                <mat-icon>format_align_left</mat-icon>
+            </button>
+            <button mat-button (click)="format('justifyCenter')">
+                <mat-icon>format_align_center</mat-icon>
+            </button>
+            <button mat-button (click)="format('justifyRight')">
+                <mat-icon>format_align_right</mat-icon>
+            </button>
+            <button mat-button (click)="insertLink()">
+                <mat-icon>link</mat-icon>
+            </button>
+        </div>
+        <!-- <textarea matInput #editor class="editor"></textarea> -->
+        <div #editor contenteditable="true" class="editor"></div>
+    </div>
+</div>
